@@ -1,19 +1,17 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :update, :destroy]
+  before_action :authenticate
 
-  # GET /companies
   def index
     @companies = Company.all
 
     render json: @companies
   end
 
-  # GET /companies/1
   def show
     render json: @company
   end
 
-  # POST /companies
   def create
     @company = Company.new(company_params)
 
@@ -24,7 +22,6 @@ class CompaniesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /companies/1
   def update
     if @company.update(company_params)
       render json: @company
@@ -33,19 +30,22 @@ class CompaniesController < ApplicationController
     end
   end
 
-  # DELETE /companies/1
   def destroy
     @company.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_company
       @company = Company.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
     def company_params
       params.require(:company).permit(:industry_id, :title, :description, :position)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |public_key, api_secret|
+        ApiClient.is_valid?(public_key: public_key, api_secret: api_secret)
+      end
     end
 end
