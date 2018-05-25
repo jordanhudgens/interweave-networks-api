@@ -82,3 +82,17 @@ Company.create!(
   position:    12,
   url:         'https://www.dailysmarty.com'
 )
+
+ecommerce            = Industry.create!(title: 'eCommerce')
+faith_family         = Industry.create!(title: 'Faith and Family')
+technology           = Industry.create!(title: 'Technology')
+personal_development = Industry.create!(title: 'Personal Development')
+travel               = Industry.create!(title: 'Travel')
+real_estate          = Industry.create!(title: 'Real Estate')
+lifestyle            = Industry.create!(title: 'Lifestyle')
+social_media         = Industry.create!(title: 'Social Media')
+hospitality          = Industry.create!(title: 'Hospitality')
+marketplaces         = Industry.create!(title: 'Marketplaces')
+local                = Industry.create!(title: 'Local')
+luxury               = Industry.create!(title: 'Luxury')
+education            = Industry.create!(title: 'Education')
