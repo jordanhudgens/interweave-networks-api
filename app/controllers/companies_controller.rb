@@ -1,6 +1,5 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :update, :destroy]
-  before_action :authenticate
 
   def index
     @companies = Company.all
@@ -41,11 +40,5 @@ class CompaniesController < ApplicationController
 
     def company_params
       params.require(:company).permit(:industry_id, :title, :description, :position)
-    end
-
-    def authenticate
-      authenticate_or_request_with_http_basic do |public_key, api_secret|
-        ApiClient.is_valid?(public_key: public_key, api_secret: api_secret)
-      end
     end
 end
