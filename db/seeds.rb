@@ -75,3 +75,10 @@ Company.create!(
   position:    11,
   url:         'https://www.farmsmarketplacexchange.exchange'
 )
+
+Company.create!(
+  title:       'DailySmarty',
+  description: 'Daily knowledge log',
+  position:    12,
+  url:         'https://www.dailysmarty.com'
+)
