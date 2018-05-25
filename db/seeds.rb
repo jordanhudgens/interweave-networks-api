@@ -65,7 +65,7 @@ estate_lyfe = Company.create!(
 tinyhouse_exchange = Company.create!(
   title:       'Tinyhouse Exchange',
   description: 'Tinyhouse sale and rental marketplace',
-  position:    10
+  position:    10,
   url:         'https://www.tinyhouse.exchange'
 )
 
@@ -98,8 +98,8 @@ luxury               = Industry.create!(title: 'Luxury')
 education            = Industry.create!(title: 'Education')
 saas                 = Industry.create!(title: 'SaaS')
 
-IndustryAssignment.create!(company: open_devose, industry: faith_family)
-IndustryAssignment.create!(company: open_devose, industry: social_media)
+IndustryAssignment.create!(company: open_devos, industry: faith_family)
+IndustryAssignment.create!(company: open_devos, industry: social_media)
 
 IndustryAssignment.create!(company: crondose,    industry: technology)
 IndustryAssignment.create!(company: crondose,    industry: education)
