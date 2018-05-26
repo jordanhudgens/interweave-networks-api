@@ -1,19 +1,16 @@
 class IndustriesController < ApplicationController
   before_action :set_industry, only: [:show, :update, :destroy]
 
-  # GET /industries
   def index
     @industries = Industry.all
 
     render json: @industries
   end
 
-  # GET /industries/1
   def show
     render json: @industry
   end
 
-  # POST /industries
   def create
     @industry = Industry.new(industry_params)
 
@@ -24,7 +21,6 @@ class IndustriesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /industries/1
   def update
     if @industry.update(industry_params)
       render json: @industry
@@ -33,18 +29,15 @@ class IndustriesController < ApplicationController
     end
   end
 
-  # DELETE /industries/1
   def destroy
     @industry.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_industry
       @industry = Industry.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
     def industry_params
       params.require(:industry).permit(:title)
     end
