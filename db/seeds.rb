@@ -7,49 +7,56 @@ open_devos = Company.create!(
   title:       'Open Devos',
   description: 'A faith based platform for discovering and publishing daily devotionals.',
   position:    1,
-  url:         'https://www.opendevos.com'
+  url:         'https://www.opendevos.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/open-devos.png',
 )
 
 crondose = Company.create!(
   title:       'CronDose',
   description: 'Daily Dev Guides - Daily Snippets for the Developer Life',
   position:    2,
-  url:         'https://www.crondose.com'
+  url:         'https://www.crondose.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/crondose.png',
 )
 
 edutechional = Company.create!(
   title:       'Edutechional',
   description: 'Video tutorials for programming, math, and computer science students',
   position:    3,
-  url:         'https://www.edutechional.com'
+  url:         'https://www.edutechional.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/edutechional.png',
 )
 
 toastability = Company.create!(
   title:       'Toastability',
   description: 'The easiest way to manage your restaurant\'s website, marketing, and day to day operations',
   position:    4,
-  url:         'https://www.toastability.com'
+  url:         'https://www.toastability.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/toastability.png',
 )
 
 deep_coding_thought = Company.create!(
   title:       'Deep Coding Thought',
   description: 'Programming and Development question and answer dashboard',
   position:    5,
-  url:         'https://www.deepcodingthought.com'
+  url:         'https://www.deepcodingthought.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/deep-coding-thought.png',
 )
 
 devtrunk = Company.create!(
   title:       'DevTrunk',
   description: 'Developer eLearning flash sale and bundle marketplace',
   position:    6,
-  url:         'https://www.devtrunk.com'
+  url:         'https://www.devtrunk.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/devtrunk.png',
 )
 
 dashtrack = Company.create!(
   title:       'DashTrack',
   description: 'Daily productivity journal',
   position:    7,
-  url:         'https://www.dashtrack.com'
+  url:         'https://www.dashtrack.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/dashtrack.png',
 )
 
 
@@ -57,35 +64,40 @@ beach_front_deals = Company.create!(
   title:       'Beach Front Deals',
   description: 'Beachfront hotel, dining, and shopping deals',
   position:    8,
-  url:         'https://www.beachfrontdeals.com'
+  url:         'https://www.beachfrontdeals.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/beach_front_deals.png',
 )
 
 estate_lyfe = Company.create!(
   title:       'Estate Lyfe',
   description: 'Luxury home showcase',
   position:    9,
-  url:         'https://www.estatelyfe.com'
+  url:         'https://www.estatelyfe.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/estate_lyfe.png',
 )
 
 tinyhouse_exchange = Company.create!(
   title:       'Tinyhouse Exchange',
   description: 'Tinyhouse sale and rental marketplace',
   position:    10,
-  url:         'https://www.tinyhouse.exchange'
+  url:         'https://www.tinyhouse.exchange',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/tinyhouse.png',
 )
 
 farmers_marketplace_xchange = Company.create!(
   title:       'Farmers Marketplace Xchange',
   description: 'Farmers market discovery system',
   position:    11,
-  url:         'https://www.farmsmarketplacexchange.exchange'
+  url:         'https://www.farmsmarketplacexchange.exchange',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/farmers_marketplace_exchange.png',
 )
 
 dailysmarty = Company.create!(
   title:       'DailySmarty',
   description: 'Daily knowledge log',
   position:    12,
-  url:         'https://www.dailysmarty.com'
+  url:         'https://www.dailysmarty.com',
+  logo:        'https://s3.amazonaws.com/interweave-networks-static/dailysmarty.png',
 )
 
 ecommerce            = Industry.create!(title: 'eCommerce')
