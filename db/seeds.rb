@@ -1,3 +1,8 @@
+ApiClient.create!(
+  public_key: SecureRandom.base64.tr('+/=', 'Qrt'),
+  api_secret: SecureRandom.base64.tr('+/=', 'Qrt')
+)
+
 open_devos = Company.create!(
   title:       'Open Devos',
   description: 'A faith based platform for discovering and publishing daily devotionals.',
